@@ -5,4 +5,6 @@ body {
   font-family: 'Ubuntu Mono', monospace;
   margin: 2em;  
   color: black;
+  width: 80%;
+  margin: 0 auto;
 }
