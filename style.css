@@ -1,8 +1,8 @@
 /* CSS files add styling rules to your content */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i');
 
 body {
-  font-family: sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
   margin: 2em;  
   color: black;
 }
-
