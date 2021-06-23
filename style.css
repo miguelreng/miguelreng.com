@@ -13,3 +13,16 @@ body {
 p, li { font-size: 0.9em; }
 
 a { font-size: 0.9em; }
+
+.col {
+  background: red;
+  width: 40%;
+}
+
+.col:nth-child(0){
+  float: left;
+}
+
+.col:nth-child(1){
+  float: right;
+}
