@@ -14,15 +14,25 @@ p, li { font-size: 0.9em; }
 
 a { font-size: 0.9em; }
 
-.col {
-  background: red;
+.col {  
   width: 40%;
 }
 
-.col:nth-child(0){
+.col-1{  
   float: left;
 }
 
-.col:nth-child(1){
+.col-2{  
   float: right;
+}
+
+.col li {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
 }
