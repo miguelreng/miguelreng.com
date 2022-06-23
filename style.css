@@ -42,7 +42,13 @@ h1, h3 {
   letter-spacing: -1px;
 }
 
-p, li { font-size: 1em; line-height: 1.7em; }
+li { font-size: 1em; line-height: 1.7em; }
+
+p { 
+  font-family: 'Medium-Font';  
+  font-size: 1.5em; 
+  line-height: 1.3em; 
+}
 
 li a { font-size: 1em}
 
