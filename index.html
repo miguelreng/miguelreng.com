@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head>  
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">  
+    <link rel="manifest" href="img/site.webmanifest">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -19,25 +23,87 @@
     <title>Miguel Rengifo</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- import the webpage's stylesheet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />    
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">      
     <link rel="stylesheet" href="style.css" />
-
-    <!-- import the webpage's javascript file -->
     <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>Miguel Rengifo</h1>
-    <legend style="font-size: 1.2em;">
-      <a href="mailto:miguelreng@gmail.com">Email</a> |
-      <a href="https://twitter.com/miguelreng">Twitter</a> |      
-      <a href="https://behance.net/miguelreng/">Work</a> |
-      <a href="https://instagram.com/rengi.jpg">Photos</a>  
-    </legend>
-    <p>
-      Hi! I'm Miguel. I'm a designer and entrepreneur. I'm currently working for <a href="https://chainstack.com">Chainstack</a>. I love taking <a href="https://instagram.com/rengi.jpg">photos</a>, traveling, chess, and dancing salsa. I'm into spirituality and mental health. I've worked in companies like MercadoLibre and Univision and co-founded <a href="https://www.crunchbase.com/organization/poetri">Poetri</a> and <a href="https://www.crunchbase.com/organization/quiickly">Quiickly</a>.      
-    </p>
+    <header class="w-full bg-transparent top-0 left-0 z-50 ">
+      <div class="container mx-auto flex flex-wrap py-2 md:py-4 md:flex-row items-center">
+          <div class="flex-1 flex font-medium items-center md:mb-0 sm:self-center ">
+            <div>
+              <img src="img/rengi.jpeg" class="rounded-full w-14 h-14 border-3 border-indigos-700"/>             
+            </div>
+            <div class="ml-2">
+              <h1 class="text-3xl">Miguel Rengifo</h1>
+              <p>Designer & Entrepreneur</p>
+            </div>            
+          </div>          
+          <nav id="menu" class="w-full md:w-auto word-spacing-12 lg:block md:ml-auto md:mr-auto text-gray-700 text-md flex-row flex flex-wrap items-center pt-6 md:py-0 md:justify-center sm:w-auto sm:self-center sm:py-0 sm:pb-0">                                                                   
+            <a href="https://behance.net/miguelreng/" class="mr-4 md:inline-block flex hover:underline">Work</a>
+            <a href="https://instagram.com/rengi.jpg" class="mr-4 md:inline-block flex hover:underline">Photos</a>
+            <a href="mailto:miguelreng@gmail.com" class="mr-4 md:inline-block flex hover:underline">Email</a>
+            <a href="https://twitter.com/miguelreng" class="mr-4 md:inline-block flex hover:underline">Twitter</a>
+            <a href="https://www.linkedin.com/in/miguelreng/" class="md:inline-block flex hover:underline">LinkedIn</a>
+          </nav>               
+      </div>        
+    </header>    
+    <section class="py-6 md:py-12"> 
+      <p class="text-xl">
+        Currently I'm working for <a href="https://chainstack.com" class="hover:underline text-blue-400">Chainstack</a> while I'm building <a href="https://chainstack.com" class="hover:underline text-blue-400">Frankly</a>. I love taking <a href="https://instagram.com/rengi.jpg" class="hover:underline text-blue-400">photos</a> during my trips. I love playing chess, and dancing salsa. I'm into spirituality and mental health. I've worked in companies like MercadoLibre and Univision and co-founded <a href="https://www.crunchbase.com/organization/poetri" class="hover:underline text-blue-400">Poetri</a> and <a href="https://www.crunchbase.com/organization/quiickly" class="hover:underline text-blue-400">Quiickly</a>.      
+      </p>
+    </section>
+    <section class="text-gray-800" id="work">                 
+      <div class="container mx-auto py-4 md:py-6 items-center">     
+          <div class="flex items-center pb-12">
+            <h1 class="text-2xl w-40 text-gray-700">Recent work</h1>                            
+            <hr class="w-full">
+          </div>          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700 text-sm font-semibold">
+              <div>
+                  <a href="https://www.figma.com/proto/xvxozf5lh9fZxCSEHLCLmd/Social-Music-App?page-id=0%3A1&node-id=74%3A1673&viewport=830%2C-430%2C0.08&scaling=scale-down&starting-point-node-id=24%3A113&show-proto-sidebar=1">
+                      <img src="img/Music.jpg" class="rounded-lg w-full md:rounded-md"/>
+                      <h1 class="mt-2 text-lg font-bold hover:underline tracking-tight md:tracking-normal">Social Music App</h1>
+                      <span class="font-normal text-gray-600">Product design, UX consulting - 2022</span>
+                  </a>
+              </div>
+              <div>
+                  <a href="https://www.figma.com/proto/hO6L5N04wPWf8XIH9V4GGJ/Wallib_App_Updated?page-id=0%3A1&node-id=201%3A95&viewport=817%2C444%2C0.1&scaling=min-zoom&starting-point-node-id=201%3A95&show-proto-sidebar=1">
+                      <img src="img/wallib.jpg" class="rounded-lg md:rounded-md"/>
+                      <h1 class="mt-2 text-lg font-bold hover:underline tracking-tight md:tracking-normal">Wallib App</h1>
+                      <span class="font-normal text-gray-600">Product design - 2022</span>
+                  </a>
+              </div>             
+              <div>
+                  <a href="https://www.figma.com/proto/RJ7CmltgBaZt5BVULpmYyr/Design-Challenge-OF?page-id=0%3A1&node-id=98%3A529&viewport=202%2C-325%2C0.15&scaling=min-zoom&starting-point-node-id=98%3A529">
+                  <img src="img/medical.jpg" class="rounded-lg md:rounded-md"/>
+                      <h1 class="mt-2 text-lg font-bold hover:underline tracking-tight md:tracking-normal">Ordinary Folk Concept App</h1>
+                      <span class="font-normal text-gray-600">Product design, User research - 2022</span>
+                  </a>
+              </div>                          
+              <!--<div>
+                  <a href="work/aleyda">
+                      <img src="img/aleyda.png" class="rounded-lg md:rounded-md"/>
+                      <h1 class="mt-2 text-lg font-bold hover:underline tracking-tight md:tracking-normal">Aleyda Webapp</h1>
+                      <span class="font-normal text-gray-600">Product design, UX consulting - 2021</span>
+                  </a>    
+              </div>                        
+              <div>
+                  <a href="work/poetri">
+                  <img src="img/poetri.png" class="rounded-lg md:rounded-md"/>
+                  <h1 class="mt-2 text-lg font-bold hover:underline tracking-tight md:tracking-normal">Poetri IDE</h1>
+                  <span class="font-normal text-gray-600">Product design, User research - 2019</span>
+                  </a>
+              </div>    
+              <div>
+                  <img src="img/instana.png" class="rounded-lg md:rounded-md"/>
+                  <h1 class="mt-2 text-lg font-bold tracking-tight md:tracking-normal">Instana Documentation Site</h1>
+                  <span class="font-normal text-gray-600">Product design - 2020</span>
+              </div>   -->            
+          </div>             
+      </div>                                 
+  </section> 
     <!--<div class="col col-1">
       <h3>
         Work Experience
@@ -88,62 +154,67 @@
         </li>
       </ul>
     </div>-->
-    <div class="col col-1">
-      <h3>Personal Projects</h3>     
-      <ul>
-        <li>
-          <a href="https://frankly.gg">Frankly</a> | Know what data you're giving to the companies before signing up.
-        </li>
-        <li>
-          <a href="https://www.mynomadhouse.com/">MyNomadHouse</a> | Save tons of money by renting or exchanging your house with a digital nomad going to your city / town.
-        </li>           
-      </ul>
-      <h3>
-        Honors & Awards
-      </h3>
-      <ul>
-        <li>Selected by the U.S. Department of State as one of the Young Leaders of the Americas, 2021</li>        
-        <li>Mention by the Government of Colombia as “One of the youngest entrepreneurs in Colombia”, 2014</li>
-        <li>Scholarship at Universidad Javeriana Cali, 2012</li>
-        <li>Nomination Alfonso Bonilla Aragon awards — Youth journalism, 2011</li>
-      </ul>
+  <section>
+    <div class="flex flex-col md:flex-row mt-10">
+      <div class="mr-0 md:mr-10">
+        <div class="flex items-center pb-12">
+          <h1 class="text-2xl w-64 text-gray-700">Personal Projects</h1>                            
+          <hr class="w-full">
+        </div> 
+        <div class="flex flex-col md:flex-row">
+          <a href="franly.gg">
+          <div class="bg-gray-50 transition duration-150 ease-out hover:ease-in hover:bg-gray-100 pointer p-8 rounded-md mr-0 mb-8 md:mb-0 md:mr-8">
+            <img src="img/square.png" class="w-24 rounded-md mb-4"/>
+            <a href="https://frankly.gg"></a><h1 class="text-2xl text-gray-500">Frankly</h1></a>
+            <h2 class="text-2xl">Know what data you're giving to the companies before signing up.</h2>
+            <p>Understand in simple words what data you're accepting to give and find a better alternative to that site</p>
+          </div></a>
+          <div class="bg-gray-50 p-8 rounded-md">
+            <img src="img/square.png" class="w-24 rounded-md mb-4"/>
+            <a href="https://frankly.gg"></a><h1 class="text-2xl text-gray-500">Frankly</h1></a>
+            <h2 class="text-2xl">Know what data you're giving to the companies before signing up.</h2>
+            <p>Understand in simple words what data you're accepting to give and find a better alternative to that site</p>
+          </div>
+        </div>        
+      </div>
+      <div class="mt-12 md:mt-0">
+        <div class="flex items-center pb-12">
+          <h1 class="text-2xl w-40 text-gray-700">Posts</h1>                            
+          <hr class="w-full">
+        </div> 
+        <ul class="list-disc pl-4 md:pl-0">
+          <li class="hover:underline">
+            <a
+              href="https://medium.com/@miguelreng/mi-fracaso-poetri-y-otros-demonios-593b55bf6afd"
+              >Mi fracaso, Poetri y otros demonios
+            </a>           
+          </li>
+          <li class="hover:underline">
+            <a
+              href="https://medium.com/@miguelreng/el-miedo-del-qu%C3%A9-dir%C3%A1n-5963843fd04e"
+              >El miedo del que dirán</a
+            >            
+          </li>
+          <li class="hover:underline">
+            <a
+              href="https://medium.com/@miguelreng/la-cruel-realidad-de-la-startups-9f46a33acc0f"
+              >La Cruel Realidad de las Startups</a
+            >            
+          </li>
+          <li class="hover:underline">
+            <a
+              href="https://elclavo.com/destacado/que-son-los-hackers-y-los-crackers-la-gran-diferencia-tecnologica/"
+              >¿Qué son los Hackers y los Crackers? La gran diferencia
+              tecnológica</a
+            >            
+          </li>        
+        </ul>          
+      </div>
     </div>
-    <div class="col col-2">      
-      <h3>
-        Posts
-      </h3>
-      <ul>
-        <li>
-          <a
-            href="https://medium.com/@miguelreng/mi-fracaso-poetri-y-otros-demonios-593b55bf6afd"
-            >Mi fracaso, Poetri y otros demonios
-          </a>
-          | Sep 4, 2018
-        </li>
-        <li>
-          <a
-            href="https://medium.com/@miguelreng/el-miedo-del-qu%C3%A9-dir%C3%A1n-5963843fd04e"
-            >El miedo del que dirán</a
-          >
-          | Dec 8, 2015
-        </li>
-        <li>
-          <a
-            href="https://medium.com/@miguelreng/la-cruel-realidad-de-la-startups-9f46a33acc0f"
-            >La Cruel Realidad de las Startups</a
-          >
-          | Nov 26, 2015
-        </li>
-        <li>
-          <a
-            href="https://elclavo.com/destacado/que-son-los-hackers-y-los-crackers-la-gran-diferencia-tecnologica/"
-            >¿Qué son los Hackers y los Crackers? La gran diferencia
-            tecnológica</a
-          >
-          | Jul 29, 2014
-        </li>        
-      </ul>      
-    </div>
-    <br />
+  </section>  
+  <hr class="w-full mt-12">
+  <footer class="py-6">
+    <p class="mx-auto text-center text-gray-500">Copyright 2022 © Miguel Rengifo</p>
+  </footer>
   </body>
 </html>
